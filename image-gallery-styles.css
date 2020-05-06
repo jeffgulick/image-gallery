@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-img {
-  width: 100%;
-}
-
 body {
   margin: 0;
   font-family: Arial;
@@ -19,7 +15,7 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 4pt;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -50,3 +46,41 @@ body {
     max-width: 100%;
   }
 }
+
+/* Creates the overlay upon mouse hover */
+#container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(8, 8, 8, 0.3);
+}
+
+#container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
