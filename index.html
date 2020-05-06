@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="image-gallery-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="scripts.js"></script>
     <title>Image-Gallery</title>
 </head>
-<body class="animated zoomInUp delay 1s">
+<header>
+  <div class="header" id="myHeader">
+    <h1>Image Grid</h1>
+    <p>Click on the buttons to change the grid view.</p>
+    <button class="btn" onclick= "one()">1</button>
+    <button class="btn active" onclick= "two()">2</button>
+    <button class="btn" onclick= "four()">4</button>
+  </div>
+</header>
+<body>
     <main class="row">
         <article class="column">
           <div id="container">
@@ -16,7 +26,7 @@
                 <div class="text">“When I let go of what I am, I become what I might be.” <br>– Lao Tzu</div>
               </div>
           </div>
-          <div id="container">
+          <div id="container" class="bird">
             <img src="pictures/bird.jpg" alt="pictuer of big tree" class="image">
               <div class="overlay">
                 <div class="text">“Luck is a dividend of sweat. The more you sweat, the luckier you get.” <br>
@@ -82,7 +92,7 @@
                   – Italian Proverb</div>
               </div>
           </div>
-          <div id="container">
+          <div id="container" class="dog">
             <img src="pictures/raincoat_dog.jpg" alt="pictuer of big tree" class="image">
               <div class="overlay">
                 <div class="text">“I am not a product of my circumstances. I am a product of my decisions.” <br>

@@ -7,10 +7,10 @@ body {
   font-family: Arial;
 }
 
-/* .header {
+.header {
   text-align: center;
   padding: 32px;
-} */
+}
 
 .row {
   display: flex;
@@ -81,4 +81,14 @@ body {
   -ms-transform: translate(-50%, -50%); */
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.bird:hover {
+  -webkit-animation: shake .5s;
+  animation: shake .5s;
+}
+
+.dog:hover {
+  -webkit-animation: bounce 1s;
+  animation: bounce 1s;
 }
