@@ -55,6 +55,7 @@ body {
 }
 
 .overlay {
+  margin-top: 8pt;
   position: absolute;
   top: 0;
   bottom: 0;
